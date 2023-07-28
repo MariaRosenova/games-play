@@ -1,4 +1,5 @@
 const Register = () => {
+  return (
     <section id="register-page" className="content auth">
     <form id="register">
       <div className="container">
@@ -33,6 +34,7 @@ const Register = () => {
       </div>
     </form>
   </section>
+  );
 }
 
 export default Register;
