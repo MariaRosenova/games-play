@@ -2,7 +2,6 @@ function App() {
   return (
     <div id="box">
       <header>
-        Navigation
         <h1>
           <a className="home" href="#">
             GamesPlay
@@ -10,34 +9,34 @@ function App() {
         </h1>
         <nav>
           <a href="#">All games</a>
-          Logged-in users
+
           <div id="user">
             <a href="#">Create Game</a>
             <a href="#">Logout</a>
           </div>
-          Guest users
+
           <div id="guest">
             <a href="#">Login</a>
             <a href="#">Register</a>
           </div>
         </nav>
       </header>
-      Main Content
+
       <main id="main-content"></main>
-      Home Page
+
       <section id="welcome-world">
         <div className="welcome-message">
           <h2>ALL new games are</h2>
           <h3>Only in GamesPlay</h3>
         </div>
-        <img src="./images/four_slider_img01.png" alt="hero" />
+        <img src="/images/four_slider_img01.png" alt="hero" />
 
         <div id="home-page">
           <h1>Latest Games</h1>
-          Display div: with information about every game (if any)
+
           <div className="game">
             <div className="image-wrap">
-              <img src="./images/CoverFire.png" />
+              <img src="/images/CoverFire.png" />
             </div>
             <h3>Cover Fire</h3>
             <div className="rating">
@@ -55,7 +54,7 @@ function App() {
           </div>
           <div className="game">
             <div className="image-wrap">
-              <img src="./images/ZombieLang.png" />
+              <img src="/images/ZombieLang.png" />
             </div>
             <h3>Zombie Lang</h3>
             <div className="rating">
@@ -73,7 +72,7 @@ function App() {
           </div>
           <div className="game">
             <div className="image-wrap">
-              <img src="./images/MineCraft.png" />
+              <img src="/images/MineCraft.png" />
             </div>
             <h3>MineCraft</h3>
             <div className="rating">
@@ -89,11 +88,11 @@ function App() {
               </a>
             </div>
           </div>
-          Display paragraph: If there is no games
+
           <p className="no-articles">No games yet</p>
         </div>
       </section>
-      Login Page ( Only for Guest users )
+
       <section id="login-page" className="auth">
         <form id="login">
           <div className="container">
@@ -118,7 +117,7 @@ function App() {
           </div>
         </form>
       </section>
-      Register Page ( Only for Guest users )
+
       <section id="register-page" className="content auth">
         <form id="register">
           <div className="container">
@@ -153,7 +152,7 @@ function App() {
           </div>
         </form>
       </section>
-      Create Page ( Only for logged-in users )
+
       <section id="create-page" className="auth">
         <form id="create">
           <div className="container">
@@ -197,7 +196,7 @@ function App() {
           </div>
         </form>
       </section>
-      Edit Page ( Only for the creator )
+
       <section id="edit-page" className="auth">
         <form id="edit">
           <div className="container">
@@ -220,7 +219,7 @@ function App() {
           </div>
         </form>
       </section>
-      Details Page
+
       <section id="game-details">
         <h1>Game Details</h1>
         <div className="info-section">
@@ -230,6 +229,7 @@ function App() {
             <span className="levels">MaxLevel: 4</span>
             <p className="type">Action, Crime, Fantasy</p>
           </div>
+
           <p className="text">
             Set in a world where fantasy creatures live side by side with
             humans. A human cop is forced to work with an Orc to find a weapon
@@ -237,11 +237,10 @@ function App() {
             creatures live side by side with humans. A human cop is forced to
             work with an Orc to find a weapon everyone is prepared to kill for.
           </p>
-          Bonus ( for Guests and Users )
+
           <div className="details-comments">
             <h2>Comments:</h2>
             <ul>
-              list all comments for current game (If any)
               <li className="comment">
                 <p>Content: I rate this one quite highly.</p>
               </li>
@@ -249,10 +248,8 @@ function App() {
                 <p>Content: The best game.</p>
               </li>
             </ul>
-            Display paragraph: If there are no games in the database
             <p className="no-comment">No comments.</p>
           </div>
-          Edit/Delete buttons ( Only for creator of this game )
           <div className="buttons">
             <a href="#" className="button">
               Edit
@@ -262,8 +259,6 @@ function App() {
             </a>
           </div>
         </div>
-        Bonus Add Comment ( Only for logged-in users, which is not creators of
-        the current game )
         <article className="create-comment">
           <label>Add new comment:</label>
           <form className="form">
@@ -272,13 +267,12 @@ function App() {
           </form>
         </article>
       </section>
-      Catalogue
+
       <section id="catalog-page">
         <h1>All Games</h1>
-        Display div: with information about every game (if any)
         <div className="allGames">
           <div className="allGames-info">
-            <img src="./images/avatar-1.jpg" />
+            <img src="/images/avatar-1.jpg" />
             <h6>Action</h6>
             <h2>Cover Fire</h2>
             <a href="#" className="details-button">
@@ -288,7 +282,7 @@ function App() {
         </div>
         <div className="allGames">
           <div className="allGames-info">
-            <img src="./images/avatar-1.jpg" />
+            <img src="/images/avatar-1.jpg" />
             <h6>Action</h6>
             <h2>Zombie lang</h2>
             <a href="#" className="details-button">
@@ -298,7 +292,7 @@ function App() {
         </div>
         <div className="allGames">
           <div className="allGames-info">
-            <img src="./images/avatar-1.jpg" />
+            <img src="/images/avatar-1.jpg" />
             <h6>Action</h6>
             <h2>MineCraft</h2>
             <a href="#" className="details-button">
@@ -306,7 +300,6 @@ function App() {
             </a>
           </div>
         </div>
-        Display paragraph: If there is no games
         <h3 className="no-articles">No articles yet</h3>
       </section>
     </div>
