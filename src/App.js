@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import ErrorPage from './components/ErrorPage';
-import GameCatalog from "./components/GameCatalog";
+import GameCatalog from "./components/GameCatalog/GameCatalog.js";
 import Header from "./components/Header";
 import WelcomeWorld from "./components/WelcomeWorld";
 import Login from "./components/Login";
