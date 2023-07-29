@@ -1,4 +1,5 @@
 const Login = () => {
+  return(
     <section id="login-page" className="auth">
     <form id="login">
       <div className="container">
@@ -23,6 +24,7 @@ const Login = () => {
       </div>
     </form>
   </section>
+  );
 }
 
 export default Login;

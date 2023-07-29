@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import ErrorPage from './components/ErrorPage';
 import GameCatalog from "./components/GameCatalog";
 import Header from "./components/Header";
 import WelcomeWorld from "./components/WelcomeWorld";
@@ -17,6 +18,9 @@ function App() {
     '/home': <WelcomeWorld />,
     '/games': <GameCatalog/>,
     '/create-game': <GameCreate/>,
+    '/login': <Login />,
+    '/register': <Register />
+    
   };
   
   const navigationChangeHandler = (path) => {
@@ -28,7 +32,7 @@ function App() {
       <Header navigationChangeHandler={navigationChangeHandler}/>
 
       <main id="main-content">
-        {routes[page] || <h2>No Page Found!</h2>}
+        {routes[page] || <ErrorPage />}
       </main>
 
         <WelcomeWorld />
