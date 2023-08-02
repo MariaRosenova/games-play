@@ -21,14 +21,13 @@ function App() {
     let rootPath = pathNames[1];
     let argument = pathNames[2];
 
-
     const routes = {
-      "home": <WelcomeWorld />,
-      "games": <GameCatalog navigationChangeHandler={navigationChangeHandler} />,
+      home: <WelcomeWorld navigationChangeHandler={navigationChangeHandler} />,
+      games: <GameCatalog navigationChangeHandler={navigationChangeHandler} />,
       "create-game": <GameCreate />,
-      "login": <Login />,
-      "register": <Register />,
-      "details": <GameDetails id={argument} />,
+      login: <Login />,
+      register: <Register />,
+      details: <GameDetails id={argument} />,
     };
 
     return routes[rootPath];
@@ -38,8 +37,6 @@ function App() {
     <div id="box">
       <Header navigationChangeHandler={navigationChangeHandler} />
       <main id="main-content">{router(page) || <ErrorPage />}</main>
-
-      <WelcomeWorld />
     </div>
   );
 }
