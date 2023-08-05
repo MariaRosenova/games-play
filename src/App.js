@@ -17,12 +17,12 @@ function App() {
       <main id="main-content">
         <Switch>
           <Route path="/" exact component={WelcomeWorld} />
-          <Route path="/games" component={GameCatalog} />
+          <Route path="/games" exact component={GameCatalog} />
           <Route path="/create-game" component={GameCreate} />
           <Route path="/login" component={Login} />
           <Route path="/logout" component={ErrorPage}/>
           <Route path="/register" component={Register} />
-          {/* <Route path=""/> */}
+          <Route path="/games/:gameId" component={GameDetails}/>
         </Switch>
       </main>
     </div>

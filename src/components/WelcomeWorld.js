@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
-
+import {} from 'react-router-dom';
 import * as gameService from "../services/gameService";
 import LatestGameCard from "./LatestGameCard";
 
-const WelcomeWorld = ({ navigationChangeHandler }) => {
+const WelcomeWorld = () => {
   const [games, setGames] = useState([]);
 
   useEffect(() => {
@@ -25,7 +25,6 @@ const WelcomeWorld = ({ navigationChangeHandler }) => {
           games.map((x) => (
             <LatestGameCard
               key={x._id}
-              navigationChangeHandler={navigationChangeHandler}
               game={x}
             />
           ))
