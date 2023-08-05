@@ -1,25 +1,26 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
+
   return (
     <header>
       <h1>
         
-        <Link className="home" to="/">
+        <NavLink className="home" to="/">
           GamesPlay
-        </Link>
+        </NavLink>
       </h1>
       <nav>
-        <Link to="/games">All games</Link>
+        <NavLink activeStyle={{border:'1px outset #02072F'}} to="/games">All games</NavLink>
 
         <div id="user">
-          <Link to="/create-game">Create Game</Link>
-          <Link to="/logout">Logout</Link>
+          <NavLink activeStyle={{border:'1px outset #02072F'}} to="/create-game">Create Game</NavLink>
+          <NavLink activeStyle={{border:'1px outset #02072F'}} to="/logout">Logout</NavLink>
         </div>
 
         <div id="guest">
-          <Link to="/login">Login</Link>
-          <Link to="/register">Register</Link>
+          <NavLink activeStyle={{border:'1px outset #02072F'}} to="/login">Login</NavLink>
+          <NavLink activeStyle={{border:'1px outset #02072F'}} to="/register">Register</NavLink>
         </div>
       </nav>
     </header>

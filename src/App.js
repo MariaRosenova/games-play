@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Route, Switch } from "react-router-dom";
 
 import ErrorPage from "./components/ErrorPage";
@@ -20,9 +19,9 @@ function App() {
           <Route path="/games" exact component={GameCatalog} />
           <Route path="/create-game" component={GameCreate} />
           <Route path="/login" component={Login} />
-          <Route path="/logout" component={ErrorPage}/>
+          <Route path="/logout" component={ErrorPage} />
           <Route path="/register" component={Register} />
-          <Route path="/games/:gameId" component={GameDetails}/>
+          <Route path="/games/:gameId" component={GameDetails} />
         </Switch>
       </main>
     </div>

@@ -1,12 +1,11 @@
-const Login = ({
-  history
-}) => {
+import { Link } from 'react-router-dom';
 
+const Login = ({ history }) => {
   const onFormSubmit = (e) => {
-      e.preventDefault();
-      history.push('/games')
+    e.preventDefault();
+    history.push("/games");
   };
-  return(
+  return (
     <section id="login-page" className="auth">
       <form id="login" onSubmit={onFormSubmit}>
         <div className="container">
@@ -25,13 +24,13 @@ const Login = ({
           <input type="submit" className="btn submit" value="Login" />
           <p className="field">
             <span>
-              If you don't have profile click <a href="#">here</a>
+              If you don't have profile click <Link to="#">here</Link>
             </span>
           </p>
         </div>
       </form>
     </section>
   );
-}
+};
 
 export default Login;
