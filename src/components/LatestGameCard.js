@@ -13,6 +13,7 @@ const LatestGameCard = ({ game }) => {
         <span>☆</span>
         <span>☆</span>
         <span>☆</span>
+        <span>☆</span>
       </div>
       <div className="data-buttons">
         <Link to={`/games/${game._id}`} className="btn details-btn">
