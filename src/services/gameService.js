@@ -1,5 +1,4 @@
-// import GameCard from "../components/GameCatalog/GameCard"
-const baseUrl = "http://localhost:3030/data";
+const baseUrl = "https://games-server-65236baf6c3c.herokuapp.com/data";
 
 export function getAll() {
   return fetch(`${baseUrl}/games?sortBy=_createdOn%20desc`).then((res) =>

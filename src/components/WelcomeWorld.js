@@ -26,6 +26,7 @@ const WelcomeWorld = () => {
             <LatestGameCard
               key={x._id}
               game={x}
+              
             />
           ))
         ) : (
